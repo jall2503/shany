@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Mi Amor</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #ff758c, #ff7eb3);
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            margin: 0;
+            flex-direction: column;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: #ff758c;
+            background-color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #f1f1f1;
+        }
+        #extraMessage {
+            margin-top: 20px;
+            display: none;
+            font-size: 1.2em;
+        }
+        img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://i.pinimg.com/564x/06/59/e2/0659e2ca920c141edc998d1bb9e76755.jpg" alt="Imagen romántica">
+    <h1>Hola, Amor</h1>
+    <p>Gracias por ser la luz de mi vida.</p>
+    <button onclick="showMessage()">Haz clic aquí</button>
+    <p id="extraMessage">¡Te amo más de lo que las palabras pueden expresar!</p>
+
+    <script>
+        function showMessage() {
+            document.getElementById('extraMessage').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
+
